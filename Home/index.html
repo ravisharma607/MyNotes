@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RV - Easy Notes Taking</title>
+    <script src="https://kit.fontawesome.com/f66bb64b37.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Style/Style.css">
+</head>
+<body>
+    <!-- Navbar section starts -->
+    <div class="heading">
+        <nav class="navbar">
+            <ul>
+                <li class="logo"> <span>MY</span>~Notes</li>
+                <div class="search">
+                    <input type="search" name="search" id="searchtxt">
+                    <button class="btn" >Search</button>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <!-- Navbar section Ends -->
+
+    <!-- Taking Notes Box section starts -->
+    <div class="note-box" >
+        <div class="box-content">
+          <div class="title">
+            <h3>Write Here</h3>
+            <i class="fa fa-pencil"></i>
+          </div>
+            <div class="box">
+                <textarea name="" id="addTxt" cols="30" rows="5"></textarea>
+            </div>
+            <div class="add">
+               <button class="btn" id="addBtn">Add Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- Taking Notes Box section Ends -->
+
+    <!-- displaying all notes section starts -->
+    <div class="all-notes">
+        <div class="notes-container" id="notes">
+            
+        </div>
+    </div>
+    <!-- displaying all notes section Ends -->
+    
+
+    <!-- Script tag -->
+    <script src="/Script/Script.js"></script>
+</body>
+</html>

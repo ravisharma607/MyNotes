@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background:#e1e8eb;
+}
+.btn{
+    background:rgb(18, 18, 75);
+    color:#fff;
+    padding:3px 8px;
+    font-size:1.2rem;
+    border-radius:5px;
+    border: none;
+}
+.heading{
+    background-color:yellow;
+    padding:10px 30px;
+}
+.heading .navbar ul{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    list-style: none;
+    font-size:1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.heading .navbar ul .logo span{
+    color: blue;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.heading .navbar ul .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading .navbar ul .search input{
+    margin-right: 15px;
+    padding:6px;
+    border-radius:4px;
+    font-weight: bold;
+}
+/* ----------------------------------------------- */
+.note-box{
+    width:50vw;
+    margin:20px auto 0 auto;
+    padding:10px;
+    text-align:center;
+}
+.note-box .box-content{
+    background:#F24A72;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    padding:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.note-box .box-content h3{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing:2px;
+    padding:0 0 10px 0;
+    display: inline-block;
+}
+.note-box .box-content .title i{
+    color:rgb(15, 15, 59);
+    font-size:1.5rem;
+    margin-left:8px;
+}
+.note-box .box-content .add .btn{
+    font-size:1.2rem;
+    border: none;
+    padding:4px 12px;
+    margin-top:10px;
+    background:rgb(18, 18, 75);
+    color:#fff;
+}
+.note-box .box textarea{
+    resize: none;
+    height:20vh;
+    border-radius:5px;
+    width:35vw;
+    border: none;
+    padding:10px;
+    font-size:1rem;
+}
+/* ------------------------------------- */
+.all-notes{
+    width: 95vw;
+    margin: 10px auto;
+}
+.notes-container{
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-wrap: wrap;
+}
+.notes-container .taskBox{
+    background:#ffff;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+     font-family: Arial, Helvetica, sans-serif;
+    margin:10px 10px;
+    padding: 15px;
+    text-align:center;
+    width:30vw;
+}
+.taskBox p{
+    padding: 5px;
+    line-height:20px;
+}
+.taskBox .action{
+    padding: 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.taskBox .action i{
+    color: red;
+    font-size:1.5rem;
+    margin:0 50px;
+    padding:5px;
+}
+#count{
+    background:#F24A72;
+    color:#fff;
+    padding: 2px 5px;
+    border-radius: 50px;
+}
+@media screen and (max-width:700px){
+    .heading .navbar ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size:1.5rem;
+    }
+    .heading .navbar ul li{
+        padding:5px 0;
+    }
+    .note-box{
+        width:95vw;
+    }
+    .note-box .box textarea{
+        width:80vw;
+    }
+    .box-content .title h3{
+        font-size:2rem;
+    }
+    .notes-container{
+        flex-wrap: wrap;
+    }
+    .notes-container .taskBox{
+        width: 70vw;
+        font-size:1.2rem;
+        padding:30px;
+    }
+    .taskBox .action i{
+        font-size:2rem;
+    }
+}
